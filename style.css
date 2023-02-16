@@ -13,7 +13,13 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/* Header */
 
 nav {
     text-align: right;
@@ -24,7 +30,7 @@ nav .nav-icon {
     display: inline-block;
     height: 40px;
     width: 40px;
-    vertical-align: center;
+    vertical-align: middle;
     border-radius: 50%;
     outline: none;
     padding: 8px;
@@ -49,4 +55,102 @@ nav .nav-button {
     padding: 9px 23px;
     border-radius: 4px;
     text-decoration: none;
+}
+
+nav .nav-button:hover {
+    background: #2b7de9;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
+/* Main */
+
+.google-logo {
+    padding: 10px 0;
+    height: 92px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    padding: 50px;
+}
+
+.search-box {
+    height: 45px;
+    width: 60vw;
+    border: 1px solid lightgray;
+    border-radius: 24px;
+    display: flex;
+    align-items: stretch;
+}
+
+.search-input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    flex-grow: 1;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    color: #9aa0a6;
+    margin: auto 0 auto 10px;
+}
+
+.mic-icon {
+    width: 24px;
+    height: 24px;
+    margin: auto 10px auto 0;
+}
+
+.button {
+    width: 150px;
+    height: 36px;
+    border: none;
+    margin: 11px 4px;
+    padding: 0 16px;
+    background-color: #f8f9fa;
+    font-size: 0.875rem;
+    color: #3c4043;
+}
+
+.languages {
+    font-size: 0.8rem;
+    color: #3c4043;
+}
+
+.language-item {
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+/* Footer */
+
+footer .row {
+    color: #70757a;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    padding: 0 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+footer .row a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #70757a;
+}
+
+@media screen and (max-width: 650px) {
+    footer .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
